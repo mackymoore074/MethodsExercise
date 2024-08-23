@@ -1,0 +1,5 @@
+C:\Users\AdedapoAluko(DM)\Dropbox (Leroy Haynes Center)\Desktop\repos\MethodsExercise\obj\Debug\net8.0\MethodsExercise.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AdedapoAluko(DM)\Dropbox (Leroy Haynes Center)\Desktop\repos\MethodsExercise\obj\Debug\net8.0\MethodsExercise.AssemblyInfoInputs.cache
+C:\Users\AdedapoAluko(DM)\Dropbox (Leroy Haynes Center)\Desktop\repos\MethodsExercise\obj\Debug\net8.0\MethodsExercise.AssemblyInfo.cs
+C:\Users\AdedapoAluko(DM)\Dropbox (Leroy Haynes Center)\Desktop\repos\MethodsExercise\obj\Debug\net8.0\MethodsExercise.csproj.CoreCompileInputs.cache
+C:\Users\AdedapoAluko(DM)\Dropbox (Leroy Haynes Center)\Desktop\repos\MethodsExercise\obj\Debug\net8.0\MethodsExercise.sourcelink.json
