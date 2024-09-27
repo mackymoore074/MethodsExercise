@@ -1,64 +1,36 @@
-﻿using System.ComponentModel;
-using System;
-using System.Drawing;
-using static System.Formats.Asn1.AsnWriter;
-using System.Dynamic;
-using System.Runtime.Intrinsics.X86;
-using System.Xml.Linq;
-
-namespace MethodsExercise
+﻿using System;
+class Program
 {
-    public class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        // calls to the methods
+        Console.WriteLine(Sum(2, 4)); 
+        Console.WriteLine(Subtract(10, 2)); 
+        Console.WriteLine(Multiply(10, 2)); 
+        Console.WriteLine(Divide(10, 2)); 
+    }
+
+    static int Sum(int a, int b)
+    {
+        return a + b;
+    }
+
+    static int Subtract(int a, int b)
+    {
+        return a - b;
+    }
+
+    static int Multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    static int Divide(int a, int b)
+    {
+        if (b == 0)
         {
-            Console.WriteLine("What is your name?"); // output
-            var name = Console.ReadLine(); // input
-            Console.WriteLine($" My Name is {name}");
-            Console.WriteLine("What is your Favorite Color?"); // output
-            var FavoriteColor = Console.ReadLine(); // input
-            Console.WriteLine($" My Favorite Color is {FavoriteColor}");
-            Console.WriteLine("What is your Favorite Animal?"); // output
-            var FavoriteAnimal = Console.ReadLine(); // input
-            Console.WriteLine($" My Favorite Animal is {FavoriteAnimal}");
-            Console.WriteLine("What is your Favorite Band?"); // output
-            var FavoriteBand = Console.ReadLine(); // input
-            Console.WriteLine($" My Favorite Band is {FavoriteBand}");
-
-            Console.WriteLine($"My dog's name is {name}. The color of his fur is {FavoriteColor}.My Favorite Animal is {FavoriteAnimal}" +
-            $" My Favorite Band is {FavoriteBand}");
+            throw new DivideByZeroException("Division by zero is not allowed.");
         }
-
-    }
-}
-
-
-
-public class Math
-{
-    public static int Add(int num1, int num2)
-    {
-        return num1 + num2;
-    }
-    public static int Subtract(int num1, int num2)
-    {
-        return num1 - num2;
-    }
-    public static int Multiply(int num1, int num2)
-    {
-        return num1 * num2;
-    }
-    public static int Divide(int num1, int num2)
-    {
-        return num1 / num2;
-    }
-    public static int Sum(params int[] numbers)
-    {
-        int sum = 0;
-        foreach (var num in numbers)
-        {
-            sum += num;
-        }
-        return sum;
+        return a / b;
     }
 }
